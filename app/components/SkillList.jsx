@@ -1,37 +1,39 @@
 "use client";
 import React from "react";
 import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiMongodb,
-  SiCplusplus,
-  SiAmazon,
-  SiDocker,
-  SiGit,
-  SiGithub,
-  SiTailwindcss,
-} from "react-icons/si";
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGit,
+  FaGithub,
+  FaAws,
+  FaDocker,
+} from "react-icons/fa";
+import {
+  TbBrandTypescript,
+  TbBrandNextjs,
+  TbBrandTailwind,
+  TbBrandMongodb,
+  TbBrandCpp,
+} from "react-icons/tb";
 
 const skills = [
-  { name: "HTML", icon: <SiHtml5 className="text-orange-600 w-6 h-6" /> },
-  { name: "CSS", icon: <SiCss3 className="text-blue-600 w-6 h-6" /> },
-  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 w-6 h-6" /> },
-  { name: "TypeScript", icon: <SiTypescript className="text-blue-500 w-6 h-6" /> },
-  { name: "React", icon: <SiReact className="text-cyan-400 w-6 h-6" /> },
-  { name: "Next.js", icon: <SiNextdotjs className="text-black w-6 h-6" /> },
-  { name: "Node.js", icon: <SiNodedotjs className="text-green-500 w-6 h-6" /> },
-  { name: "MongoDB", icon: <SiMongodb className="text-green-400 w-6 h-6" /> },
-  { name: "C++", icon: <SiCplusplus className="text-blue-500 w-6 h-6" /> },
-  { name: "AWS", icon: <SiAmazon className="text-orange-500 w-6 h-6" /> },
-  { name: "Docker", icon: <SiDocker className="text-blue-400 w-6 h-6" /> },
-  { name: "Git", icon: <SiGit className="text-red-500 w-6 h-6" /> },
-  { name: "GitHub", icon: <SiGithub className="text-gray-800 w-6 h-6" /> },
-  { name: "TailwindCSS", icon: <SiTailwindcss className="text-sky-400 w-6 h-6" /> },
+  { name: "HTML", icon: <FaHtml5 className="text-orange-600 w-6 h-6" /> },
+  { name: "CSS", icon: <FaCss3Alt className="text-blue-600 w-6 h-6" /> },
+  { name: "JavaScript", icon: <FaJs className="text-yellow-400 w-6 h-6" /> },
+  { name: "TypeScript", icon: <TbBrandTypescript className="text-blue-500 w-6 h-6" /> },
+  { name: "React", icon: <FaReact className="text-cyan-400 w-6 h-6" /> },
+  { name: "Next.js", icon: <TbBrandNextjs className="text-black w-6 h-6" /> },
+  { name: "Node.js", icon: <FaNodeJs className="text-green-500 w-6 h-6" /> },
+  { name: "MongoDB", icon: <TbBrandMongodb className="text-green-400 w-6 h-6" /> },
+  { name: "C++", icon: <TbBrandCpp className="text-blue-500 w-6 h-6" /> },
+  { name: "AWS", icon: <FaAws className="text-orange-500 w-6 h-6" /> },
+  { name: "Docker", icon: <FaDocker className="text-blue-400 w-6 h-6" /> },
+  { name: "Git", icon: <FaGit className="text-red-500 w-6 h-6" /> },
+  { name: "GitHub", icon: <FaGithub className="text-gray-800 w-6 h-6" /> },
+  { name: "TailwindCSS", icon: <TbBrandTailwind className="text-sky-400 w-6 h-6" /> },
 ];
 
 export default function SkillList() {

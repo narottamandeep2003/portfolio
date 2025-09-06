@@ -1,3 +1,4 @@
+"use client";
 import { Github, Linkedin, Instagram } from "lucide-react";
 
 export default function SocialLinks() {

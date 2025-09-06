@@ -14,23 +14,15 @@ export default function Portfolio() {
   const sections = [
     {
       id: "home",
-      content:
-        "I'm a full-stack developer specializing in React, Node.js, and modern web development. I love building interactive web experiences and solving challenging problems.",
     },
     {
       id: "Experience",
-      content:
-        "Here I share my thoughts, projects, and tutorials. Stay tuned for updates and insights.",
-    },
+      },
     {
       id: "skills",
-      content:
-        "I specialize in React, Node.js, Tailwind, Next.js, and other modern web development tools. Always learning and growing.",
-    },
+      },
     {
       id: "contact",
-      content:
-        "Want to collaborate or have any questions? Feel free to reach out via email or social links.",
     },
   ];
 

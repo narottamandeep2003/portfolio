@@ -5,6 +5,10 @@ import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import { motion } from "framer-motion";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
+import SkillsSection from "./components/SkillsSection";
+import SkillsProgress from "./components/SkillsProgress";
+import SkillList from "./components/SkillList";
 
 export default function Portfolio() {
   const sections = [
@@ -61,7 +65,7 @@ export default function Portfolio() {
   }, [sections]);
 
   return (
-    <div className="flex flex-col md:flex-row bg-gray-100 min-h-screen">
+    <div className="flex flex-col md:flex-row min-h-screen">
       <SocialBar />
       <Navbar active={active} />
 
@@ -71,8 +75,8 @@ export default function Portfolio() {
         <div className="flex justify-center h-screen items-center">
           <div className="w-[calc(100vw-50px)] h-[calc(100vh-100px)] md:w-[calc(100vw-300px)] md:h-[calc(100vh-100px)] rounded-3xl bg-[#212228]">
 
-            <HomeSection content={sections[0].content} /> 
-            </div>
+            <HomeSection content={sections[0].content} />
+          </div>
         </div>
 
         {/* Blog */}
@@ -80,25 +84,26 @@ export default function Portfolio() {
           id="Experience"
           className="min-h-screen flex justify-center "
         >
-          <div className="w-full flex justify-center">
+          <div className="w-full flex  flex-col justify-center">
             <Experience></Experience>
+            <Education></Education>
           </div>
+
         </motion.section>
 
         {/* Skills */}
-        {/* <motion.section
+        <motion.section
           id="skills"
-          className="min-h-screen flex items-center justify-center text-center"
+          className="min-h-screen flex justify-center "
         >
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-orange-600 to-red-600 text-transparent bg-clip-text">
-              Skills
-            </h1>
-            <p className="text-lg md:text-xl max-w-2xl text-gray-700">
-              {sections[2].content}
-            </p>
+            <div className="w-full flex  flex-col justify-center">
+              <SkillsSection></SkillsSection>
+              <SkillsProgress></SkillsProgress>
+              <SkillList></SkillList>
+            </div>
           </div>
-        </motion.section> */}
+        </motion.section>
 
         {/* Contact */}
         {/* <motion.section

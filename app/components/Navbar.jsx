@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Home, BookOpen, Code, Mail, Menu, X } from "lucide-react";
+import { Home, BookOpen, Code, Mail, Menu, X,Briefcase } from "lucide-react";
 
 const sections = [
     { id: "home", icon: <Home size={22} />, label: "Home" },
-    { id: "Experience", icon: <BookOpen size={22} />, label: "Blog" },
+    { id: "Experience", icon: <Briefcase size={22} />, label: "Experience" },
     { id: "skills", icon: <Code size={22} />, label: "Skills" },
     { id: "contact", icon: <Mail size={22} />, label: "Contact" },
 ];
@@ -31,7 +31,7 @@ export default function Navbar({ active }) {
             </div>
 
             {/* Mobile Hamburger */}
-            <div className="fixed top-0 left-0 w-full h-[60px] flex items-center justify-between px-4 z-50 shadow-md md:hidden bg-amber-50">
+            <div className="fixed top-0 left-0 w-full h-[60px] flex items-center justify-between px-4 z-50  md:hidden">
                 {/* Logo */}
                 <div className="font-bold text-lg"><img src="/girlLogo.png" alt="" className=" rounded-full w-10" /></div>
 

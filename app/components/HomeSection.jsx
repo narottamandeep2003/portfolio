@@ -29,7 +29,7 @@ export default function HomeSection({ content }) {
           </p>
           <div className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
             <a
-              href="/resume.pdf"
+              href="/Aastha.pdf"
               className="px-5 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transform transition-all text-sm sm:text-base"
             >
               Download CV
@@ -61,7 +61,7 @@ export default function HomeSection({ content }) {
             transitionSpeed={400}
           >
             <img
-              src="https://images.pexels.com/photos/33669673/pexels-photo-33669673.jpeg"
+              src="https://images.pexels.com/photos/15640142/pexels-photo-15640142.jpeg"
               alt="Profile"
               className="w-full h-full object-cover rounded-xl shadow-2xl"
             />

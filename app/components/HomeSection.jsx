@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
-export default function HomeSection({ content }) {
+export default function HomeSection() {
   return (
     <motion.section
       id="home"
@@ -25,7 +25,7 @@ export default function HomeSection({ content }) {
             Hi, I'm Aastha
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-md">
-            {content}
+            Welcome to my portfolio! 🚀 This is the home section where you can get a quick introduction about me.
           </p>
           <div className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
             <a

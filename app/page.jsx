@@ -4,6 +4,7 @@ import SocialBar from "./components/SocialBar";
 import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import { motion } from "framer-motion";
+import Experience from "./components/Experience";
 
 export default function Portfolio() {
   const sections = [
@@ -13,7 +14,7 @@ export default function Portfolio() {
         "I'm a full-stack developer specializing in React, Node.js, and modern web development. I love building interactive web experiences and solving challenging problems.",
     },
     {
-      id: "blog",
+      id: "Experience",
       content:
         "Here I share my thoughts, projects, and tutorials. Stay tuned for updates and insights.",
     },
@@ -65,29 +66,24 @@ export default function Portfolio() {
       <Navbar active={active} />
 
       {/* Main Content Wrapper */}
-      <div className="w-full ml-0 mr-0 md:ml-14 md:mr-20">
+      <div className="w-full ml-0 mr-0 md:ml-14 md:mr-20 mt-[30px] md:mt-0">
         {/* Home */}
         <div className="flex justify-center h-screen items-center">
-          <div className="w-[calc(100vw-50px)] h-[calc(100vh-50px)] md:w-[calc(100vw-300px)] md:h-[calc(100vh-100px)] rounded-3xl bg-[#212228]">
+          <div className="w-[calc(100vw-50px)] h-[calc(100vh-100px)] md:w-[calc(100vw-300px)] md:h-[calc(100vh-100px)] rounded-3xl bg-[#212228]">
 
             <HomeSection content={sections[0].content} /> 
             </div>
         </div>
 
         {/* Blog */}
-        {/* <motion.section
-          id="blog"
-          className="min-h-screen flex items-center justify-center text-center"
+        <motion.section
+          id="Experience"
+          className="min-h-screen flex justify-center "
         >
-          <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-orange-600 to-red-600 text-transparent bg-clip-text">
-              Blog
-            </h1>
-            <p className="text-lg md:text-xl max-w-2xl text-gray-700">
-              {sections[1].content}
-            </p>
+          <div className="w-full flex justify-center">
+            <Experience></Experience>
           </div>
-        </motion.section> */}
+        </motion.section>
 
         {/* Skills */}
         {/* <motion.section
